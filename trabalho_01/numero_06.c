@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main() {
    int num ,tentativaNum, tentativas = 0;
@@ -8,11 +9,14 @@ int main() {
    	printf("o numero secreto é %d\n",num);
    	printf("____________________________________\n");
    	printf("bem vindo ao jogo do numero Secreto\n");
-   	printf("Digite um numero de 1 a 100 :");
+   	
+	
+	do{
+	printf("Digite um numero de 1 a 100 :");
    	scanf("%d",&tentativaNum);
+   	tentativas= tentativas ++;
    
-   
-   do{
+  
   	
    	if (tentativaNum == num ){
    		printf("Parabéns!\nVocê acertou o número %d\nCom um total de %d tentativas!\n", num, tentativas);
@@ -25,7 +29,7 @@ int main() {
 		   		printf("o numero secreto é menor");
 			   }
 			   tentativas= tentativas + 1;
-	}while(tentativaNum != num)
+	}while(tentativaNum != num);
     return 0;
     
 }
