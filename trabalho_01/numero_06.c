@@ -15,7 +15,7 @@ int main() {
 	do{
 	printf("Digite um numero de 1 a 100 :");
    	scanf("%d",&tentativaNum);
-   	tentativas= tentativas++;
+   	tentativas = tentativas + 1;
    
   
   	
